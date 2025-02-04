@@ -57,6 +57,13 @@ button {
 img {
 	width: 100%;
 }
+
+.section-content {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: var(--site-max-width);
+}
+
  /* Navbar styling */
 header {
 background: var(--primary-color);
@@ -64,19 +71,31 @@ background: var(--primary-color);
 
 header .navbar {
 	display: flex;
+	padding: 20px;
 	align-items: center;
 	justify-content: space-between;
 }
 
 .navbar .nav-logo .logo-text {
 	color: var(--white-color);
+	font-size: var(--font-size-xl);
+	font-weight: var(--font-weight-semibold);
 }
 
 .navbar .nav-menu {
 	display: flex;
-	gap: 35px;
+	gap: 10px;
 }
 
 .navbar .nav-menu .nav-link {
+	padding: 10px 18px;
 	color: var(--white-color);
+  font-size: var(--border-radius-n);
+  border-radius: var(--border-radius-m);
+  transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+	background: var(--secondary-color);
+	color: var(--primary-color);
 }
