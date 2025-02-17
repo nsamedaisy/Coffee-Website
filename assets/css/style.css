@@ -180,6 +180,11 @@ transition: 0.3s ease;
 	--font-size-xl: 1.5rem;
 	--font-size-xxl: 1.8rem;
 	}
+
+	.navbar :where(#menu-close-button, #menu-open-button) {
+		
+	}
+
 	.navbar .nav-menu {
 		display: block;
 		position: fixed;
